@@ -13,6 +13,9 @@ import pytesseract
 from pytube import YouTube
 from pytube.exceptions import RegexMatchError
 from configparser import ConfigParser
+from pathlib import Path
+
+SLASH = "\\" if os.name == 'nt' else "/"
 
 
 def config(section: str = None, option: str = None) -> Union[ConfigParser, str]:
@@ -82,17 +85,20 @@ def read_user_data() -> json:
     Reads the users data from json file
     :return: Returns user data as json
     """
-    if not os.path.exists("data\\userdata.json"):
-        if not os.path.exists("data\\"):
-            os.makedirs("data\\")
-        with open("data\\userdata.json", "w") as user_data:
+    # switch to pathlib:
+    data_file = Path("data/userdata.json")
+    if not data_file.exists():
+        data_file.parent.mkdir(parents=True, exist_ok=True)
+
+        with data_file.open("w") as user_data:
             user_data.write(json.dumps({"all_videos": []}))
-            pass
         return None
+
     try:
-        with open("data\\userdata.json", "r") as user_data_json:
-            data = json.load(user_data_json)
+        with data_file.open("r") as user_data:
+            data = json.load(user_data)
             return data
+
     except JSONDecodeError:
         logging.error("Failed to read data from userdata.json, file may be empty.")
         return None
@@ -106,14 +112,15 @@ def get_vid_save_path() -> str:
     vid_download_path = config("UserSettings", "video_save_path")
     # Set default output path for video download path
     if vid_download_path == "output_path":
-        default_path = os.path.dirname(os.getcwd()) + "\\out\\videos\\"
-        if not os.path.exists(default_path):
-            os.makedirs(default_path)
-        return default_path
+        default_path = Path.cwd().parent / "out" / "videos"
+        if not default_path.exists():
+            default_path.mkdir(parents=True, exist_ok=True)
+
+        return str(default_path)
     # Check if the path ends with a backslash
-    if not vid_download_path.endswith("\\"):
-        # If it doesn't end with a backslash, append one
-        vid_download_path += "\\"
+    vid_download_path = Path(vid_download_path)
+    if not vid_download_path.is_dir():
+        return f"{vid_download_path}" + SLASH
 
     return vid_download_path
 
@@ -126,15 +133,11 @@ def get_output_path() -> str:
     output_path = config("UserSettings", "capture_output_path")
     # Set default output path for code files
     if output_path == "output_path":
-        default_path = os.path.dirname(os.getcwd()) + "\\out\\"
-        if not os.path.exists(default_path):
-            os.makedirs(default_path)
-        return default_path
-    # Check if the path ends with a backslash
-    if not output_path.endswith("\\"):
-        # If it doesn't end with a backslash, append one
-        output_path += "\\"
-    return output_path
+        default_path = Path.cwd().parent / "out"
+        if not default_path.exists():
+            default_path.mkdir(parents=True, exist_ok=True)
+
+    return str(default_path) if str(default_path).endswith(SLASH) else str(default_path) + SLASH
 
 
 def send_code_snippet_to_ide(filename: str, code_snippet: str) -> bool:
@@ -144,14 +147,20 @@ def send_code_snippet_to_ide(filename: str, code_snippet: str) -> bool:
     :param code_snippet: The code snippet to open
     :return: Returns True if successful
     """
-    file_path = write_to_file(code_snippet,
-                              file_path=f"{get_output_path()}"
-                                        f"{os.path.splitext(filename.replace(' ', '_'))[0]}"
-                                        f"{get_file_extension_for_current_language()}")
+    # Replace spaces with underscores and remove file extension
+    filename = Path(filename.replace(' ', '_')).stem
+
+    # Construct the full file path
+    file_path = Path(get_output_path()) / (filename + get_file_extension_for_current_language())
+
+    # Assuming write_to_file returns the path if successful, None otherwise
+    file_path = write_to_file(code_snippet, file_path=file_path)
+
     if file_path is None:
         return False
+
     try:
-        subprocess.run([config("AppSettings", "ide_executable"), file_path], shell=True)
+        subprocess.run([config("AppSettings", "ide_executable"), str(file_path)], shell=True)
         logging.info("Successfully opened code snippet in IDE")
         return True
     except subprocess.SubprocessError as error:
@@ -243,7 +252,7 @@ def is_video_downloaded(filename: str) -> Optional[bool]:
     if current_video is None:
         return None
 
-    # Check if the video has a youtube url in the userdata file.
+    # Check if the video has a YouTube url in the userdata file.
     if "youtube_url" not in current_video:
         return False
 
@@ -294,6 +303,7 @@ def add_video_to_user_data(filename: str, video_title: str, video_hash: str, you
         return
     thumbnail = str(int(time.time())) + ".png"
     # Check if img dir exists if not create
+    # TODO: Use pathlib, but no impact on os compatibility
     if not os.path.exists("static/img"):
         os.makedirs("static/img")
     cv2.imwrite(f"static/img/{thumbnail}", frame)
