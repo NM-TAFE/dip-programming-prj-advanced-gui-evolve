@@ -45,5 +45,36 @@ Did you discuss these ideas with the group? What was the outcome?
 How did you validate your progress this week?
 > Answer
 
+### 17 May 2024
+#### Summary
+> What work did you do this week
+- Signed up for openAI API key and installed project.
+- Tested the app.
+- Discussed user stories and possible app improvements with team.
+> What work you are planning to do next week
+- Discuss possible user requirements and mockups with team.
+- Start working on mockups (using Adobe XD / Figma)
+- Research audio features of Adobe XD / Figma
+> Any blockers
 
+#### Issues and PRs
+> list any issues you were working on or Pull request
+
+#### Evidence
+Mark all that applied this week
+- [x] Attended class
+- [] Responded to PRs/Issues
+- [x] Met with the team online. Forum: in person during class and online Teams chat group
+- [x] Commits to group repo
+
+> :warning: If you were not able to mark any of these on a particular week, please email your lecturer with the reason.
+
+#### Retrospective
+
+In what ways have your thoughts about the design changed this week and why?
+> Answer
+Did you discuss these ideas with the group? What was the outcome?
+> Answer
+How did you validate your progress this week?
+> Answer
 
