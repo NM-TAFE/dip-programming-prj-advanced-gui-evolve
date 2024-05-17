@@ -13,49 +13,105 @@ Where `<pfx>` is your 2-3 character prefix.
 Your journal entry should contain the following (you can use Obsedian if you like to set it up)
 
 ### 07 May 2024
+# Notice
+This folder is for usage by project teams it will not be published in the main repository.
+
+## Instructions to team members
+As a member of the team you must upload a weekly journal with your work into this folder in the following format:
+
+```bash
+journal_<ctc>.md
+```
+Where `<pfx>` is your 2-3 character prefix.
+
+## Journal content
+Your journal entry should contain the following (you can use Obsedian if you like to set it up)
+
+### <17 May 2024>
+
 #### Summary
-> What work did you do this week
-  - This week, I engaged in user interviews using meta.ai to gain insights into their experiences.
-  - I became an active member of our GitHub project team, received assignments and contributing to discussions.
-  - Set up my local environment, I forked the project repository and configured it on my machine.
-  - In a collaborative session with the team, I shared the findings from the AI interviews, fostering mutual understanding.
+**Work Done This Week:**
+- Fixed the error in code related to path handling for Mac and Linux devices.
+- Discussed various issues and ideas related to code capturing and IDE features.
 
-> What work you are planning to do next week
-- Sign up for OpenAI API key and install project.
-- Cooperate closely with the team to ensure project progress and alignment with objectives.
+**Plans for Next Week:**
+- Finalize solutions for code capturing issues.
+- Implement key options for capturing frames and pausing videos.
+- Address IDE feature malfunctions.
+- Begin integration of screen reader for code reading.
 
-
-
-> Any blockers
-> -None
+**Blockers:**
+- None.
 
 #### Issues and PRs
-> list any issues you were working on or Pull request
-- No particular issues or pull requests were handled this week.
+- Discussed issues related to code capturing.
+- Brainstormed ideas for implementing key options for code capturing and other features.
 
+#### Evidence
+Mark all that applied this week
+- [x] Attended class
+- [x] Responded to PRs/Issues
+- [x] Met with the team online. Forum: Zoom
+- [x] Commits to group repo
+
+#### Retrospective
+In what ways have your thoughts about the design changed this week and why?
+- This week, our discussions on code capturing and IDE features made me realize the importance of incorporating user-friendly functionalities. It prompted us to reconsider certain design aspects to enhance user experience.
+
+Did you discuss these ideas with the group? What was the outcome?
+- Yes, we had extensive discussions within the team regarding the identified issues and potential solutions. The outcome was positive, with everyone contributing valuable insights and agreeing on the need for further improvements.
+
+How did you validate your progress this week?
+- We validated our progress by actively engaging in discussions, sharing ideas, and setting clear objectives for the upcoming tasks. Additionally, continuous communication and collaboration within the team ensured that we remained aligned with our goals.
+
+
+# Notice
+This folder is for usage by project teams it will not be published in the main repository.
+
+## Instructions to team members
+As a member of the team you must upload a weekly journal with your work into this folder in the following format:
+
+```bash
+journal_<ctc>.md
+```
+Where `<pfx>` is your 2-3 character prefix.
+
+## Journal content
+Your journal entry should contain the following (you can use Obsedian if you like to set it up)
+
+### 14 May 2024
+
+#### Summary
+**Work Done This Week:**
+- Fixed the error in code related to path handling for Mac and Linux devices.
+- Discussed various issues and ideas related to code capturing and IDE features.
+
+**Plans for Next Week:**
+- Finalize solutions for code capturing issues.
+- Implement key options for capturing frames and pausing videos.
+- Address IDE feature malfunctions.
+- Begin integration of screen reader for code reading.
+
+**Blockers:**
+- None.
+
+#### Issues and PRs
+- Discussed issues related to code capturing.
+- Brainstormed ideas for implementing key options for code capturing and other features.
 
 #### Evidence
 Mark all that applied this week
 - [x] Attended class
 - [ ] Responded to PRs/Issues
-- [x] Engaged in team discussions online. Our communication platform is Teams, managed by Nathan.
-- [X] Commits to group repo
-
-> :warning: If you were not able to mark any of these on a particular week, please email your lecturer with the reason.
+- [x] Met with the team online. Forum: Zoom
+- [x] Commits to group repo
 
 #### Retrospective
-
 In what ways have your thoughts about the design changed this week and why?
-> Answer
-- My perspective on the project's direction changed this week, particularly after conducting user interviews. These insights prompted considerations for adjustments aimed at better aligning our project with user experience.
+- This week, our discussions on code capturing and IDE features made me realize the importance of incorporating user-friendly functionalities. It prompted us to reconsider certain design aspects to enhance user experience.
 
-**Discussion with the Group:**
 Did you discuss these ideas with the group? What was the outcome?
-> Answer
-- Yes, We shared the insights gained from the user interviews with the team during our collaborative meeting.The outcome was constructive discussion, with the team offering valuable perspectives and suggestions for further exploration.
+- Yes, we had extensive discussions within the team regarding the identified issues and potential solutions. The outcome was positive, with everyone contributing valuable insights and agreeing on the need for further improvements.
+
 How did you validate your progress this week?
-> Answer
-- Assessing the quality and depth of insights gained from the user interviews. 
-
-
-
+- We validated our progress by actively engaging in discussions, sharing ideas, and setting clear objectives for the upcoming tasks. Additionally, continuous communication and collaboration within the team ensured that we remained aligned with our goals.
