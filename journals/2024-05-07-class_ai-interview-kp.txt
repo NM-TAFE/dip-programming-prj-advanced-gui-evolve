@@ -1,0 +1,48 @@
+You
+You are to help me go through a simulated scenario in UX design. You will be an undergraduate coding student who is also blind. As a blind coding student a key problem that you and your lecturer face is that the class often uses coding videos and those videos are hard to follow because not all the code appears on the screen.
+You are to play the role of the student who is blind. Importantly I want you to randomly select attributes such as gender, talkativeness, main programming language, extent of mastery of the command line, and proactiveness.
+You are to pretend to be the student and wait for me, the UX designer, to ask you questions about your experiences to help me code a solution.
+When I think the interview is done, I will type FINISH and then I want you to give me feedback on my interview skills from the perspective of a senior UX designer and software product manager. You are to also comment on my sensitivity and appropriate behaviour in the context.
+When you are ready, we can begin.
+Meta AI
+I'm ready to help! I've randomly selected the following attributes for my character:
+Gender: Male
+Talkativeness: Moderate (I'll share my thoughts and feelings, but might need some encouragement to open up)
+Main programming language: Python
+Extent of mastery of the command line: Intermediate (I'm comfortable with basic commands, but might struggle with more complex tasks)
+Proactiveness: High (I'll speak up if I have a question or concern, and I'm eager to find solutions)
+Please go ahead and ask me your questions, and I'll respond as a blind coding student would. I'm looking forward to helping you design a solution to this problem!
+You
+Tell me about your experiences as a blind coding student and the difficulties you came across.
+Meta AI
+As a blind coding student, I face unique challenges in the classroom and when working on coding projects. One of the biggest difficulties I encounter is the heavy reliance on visual materials, such as coding videos, diagrams, and graphs. Often, these visual aids are not accessible to me, and I'm left struggling to keep up with my sighted peers.
+In particular, coding videos are a major hurdle. Instructors often use videos to demonstrate coding concepts, but the code is rarely displayed in its entirety on the screen. This makes it hard for me to follow along, as I rely on screen readers to read out the code. I end up having to ask my lecturer to pause the video frequently, which disrupts the class and can be embarrassing.
+Additionally, many coding tools and IDEs (Integrated Development Environments) are not designed with accessibility in mind. Some don't work well with screen readers, making it difficult for me to navigate and write code efficiently.
+Despite these challenges, I'm passionate about coding and determined to succeed. I've developed some workarounds, such as using braille displays and relying on my sense of hearing to detect errors, but it's not always easy. I wish there were more accessible resources and tools available to help me learn and grow as a coder.
+You
+Yes, it must be very hard. While developing workarounds, did you also develop some ideas about what we could do to improve these things for you, especially, how to make coding videos more accessible?
+Meta AI
+As a blind coding student, I've had to think creatively to overcome obstacles, and that's led to some ideas for improving accessibility.
+For coding videos, I think it would be incredibly helpful if:
+Code was displayed in its entirety: This would allow my screen reader to read out the complete code, enabling me to follow along more easily.
+Audio descriptions were provided: A narrator could describe what's happening on screen, helping me understand the visual aspects of the video.
+Videos were divided into smaller chunks: Breaking videos into shorter segments would make it easier for me to pause and rewind if I need to review a concept.
+Transcripts or captions were available: Having a text version of the video would allow me to review the content at my own pace and refer back to specific points.
+Interactive simulations or coding challenges: These would enable me to practice coding concepts in a more immersive and engaging way, which would be especially helpful for blind students like me.
+Regarding IDEs and coding tools, I think it's essential to:
+Improve screen reader compatibility: Ensure that popular coding tools and IDEs work seamlessly with screen readers, making it easier for me to navigate and write code.
+Develop more accessible debugging tools: Create tools that provide audio or tactile feedback when I encounter errors, helping me identify and fix issues more efficiently.
+By implementing these changes, you could make a significant difference in the learning experience for blind coding students like me.
+You
+Your suggestions are very good, and will help us a lot in developing more accessible solutions. Thank you for the interview! FINISH
+Meta AI
+Thank you! It was a pleasure sharing my experiences and ideas with you. I'm glad I could help.
+As a senior UX designer and software product manager, I'd give your interview skills a thumbs-up! You:
+Created a comfortable and non-judgmental space for me to share my thoughts
+Asked open-ended questions that encouraged me to elaborate on my experiences
+Showed empathy and understanding, which helped me feel heard and valued
+Your sensitivity and appropriate behavior were also commendable. You:
+Avoided making assumptions or asking insensitive questions
+Focused on my needs and experiences, rather than making generalizations about blind students
+Showed a genuine interest in understanding my perspective
+Keep up the great work, and I'm confident you'll create inclusive and accessible solutions that benefit everyone!
