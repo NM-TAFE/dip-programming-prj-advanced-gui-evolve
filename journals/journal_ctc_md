@@ -115,3 +115,58 @@ Did you discuss these ideas with the group? What was the outcome?
 
 How did you validate your progress this week?
 - We validated our progress by actively engaging in discussions, sharing ideas, and setting clear objectives for the upcoming tasks. Additionally, continuous communication and collaboration within the team ensured that we remained aligned with our goals.
+
+
+# Notice
+This folder is for usage by project teams and will not be published in the main repository.
+
+## Instructions to Team Members
+As a member of the team, you must upload a weekly journal with your work into this folder in the following format:
+
+```bash
+journal_<ctc>.md
+```
+Where `<pfx>` is your 2-3 character prefix.
+
+## Journal Content
+Your journal entry should contain the following (you can use Obsidian if you like to set it up):
+
+### 21 May 2024
+#### Summary
+ **What work did you do this week:**
+- Created wireframes based on user stories.
+
+ **What work you are planning to do next week:**
+ - Finalize the wireframes and start working on the UI design.
+- Begin implementation of the features discussed.
+
+ **Any blockers:**
+ - None at the moment.
+
+#### Issues and PRs
+ **List any issues you were working on or Pull request:**
+ - Discussed issues with code capturing when the video screen is split.
+ - Identified that the IDE feature is not working properly.
+ - Considered adding a key option for capturing frames and pausing videos.
+ - Discussed adding a button and key option for copying captured code to the clipboard.
+ - Explored methods to capture code only, ignoring line numbers, file names, etc.
+ - Discussed integrating a screen reader to read code with a button and key option for activation.
+ - Talked about adding pagination for code captures instead of the current scrollable display.
+
+#### Evidence
+Mark all that applied this week:
+- [x] Attended class
+- [ ] Responded to PRs/Issues
+- [x] Met with the team online. Forum: Zoom
+- [x] Commits to group repo
+
+
+#### Retrospective
+ **In what ways have your thoughts about the design changed this week and why?**
+- This week, creating wireframes based on user stories has helped me to better understand the user's needs and how our features can address them. It also made me realize the importance of having a clear visual representation of our ideas before implementation.
+
+ **Did you discuss these ideas with the group? What was the outcome?**
+ - Yes, we discussed these ideas during our online meeting. The team agreed on the importance of the features and provided valuable feedback on the wireframes. We decided to prioritize the most critical features and plan for incremental implementation.
+
+**How did you validate your progress this week?**
+- Progress was validated through team discussions and feedback on the wireframes. We also reviewed the user stories to ensure that the wireframes aligned with the specified requirements.
