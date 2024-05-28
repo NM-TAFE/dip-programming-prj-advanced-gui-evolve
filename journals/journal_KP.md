@@ -110,3 +110,32 @@ Did you discuss these ideas with the group? What was the outcome?
 > Answer
 How did you validate your progress this week?
 - I think we are making good progress.
+
+### 28 May 2024
+#### Summary
+> What work did you do this week
+- Finalised wireframe (paper prototype).
+- Assigned coding tasks to team members.
+> What work you are planning to do next week
+- Work on assigned tasks.
+> Any blockers
+
+#### Issues and PRs
+> list any issues you were working on or Pull request
+
+#### Evidence
+Mark all that applied this week
+- [x] Attended class
+- [] Responded to PRs/Issues
+- [x] Met with the team online. Forum: in person during class and online Teams chat group
+- [] Commits to group repo
+
+> :warning: If you were not able to mark any of these on a particular week, please email your lecturer with the reason.
+
+#### Retrospective
+
+In what ways have your thoughts about the design changed this week and why?
+> Answer
+Did you discuss these ideas with the group? What was the outcome?
+> Answer
+How did you validate your progress this week?
