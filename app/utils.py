@@ -52,7 +52,7 @@ def hash_video_file(filename: str) -> str:
     :return: Returns hex based md5 hash
     """
     hash_md5 = hashlib.md5()
-    with open(f"{get_vid_save_path()}{filename}", "rb") as f:
+    with open(f"{get_vid_save_path()}\\{filename}", "rb") as f:
         for chunk in iter(lambda: f.read(4096), b""):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()

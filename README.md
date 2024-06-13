@@ -66,7 +66,28 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. ...rest of installation steps here
+6. Navigate to the App directory
+Click on the app file or
+
+```bash
+cd app
+```
+## 7. Generate a config file by using the following commands
+```bash
+copy config.example.ini config.ini
+```
+or CP
+
+```bash
+cp config.example.ini config.ini
+```
+
+## 8. Run the Application
+Run the project on your local machine using the debugger and click the URL link that shows up in your terminal. 
+```bash
+http://localhost:5000
+```
+
 
 ## Contributing
 
