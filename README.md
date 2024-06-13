@@ -34,8 +34,8 @@ The program reads code from videos to assist visually impaired developers in usi
 
 ## Installation
 
-To install and run this project, please follow the [Installation Guide](https://github.com/NM-TAFE/project-advanced-ui-development-team-mental-capacity/wiki/Installation-Guide)
-in the [Wiki](https://github.com/NM-TAFE/project-advanced-ui-development-team-mental-capacity/wiki).
+To install and run this project, please follow the [Installation Guide](https://github.com/GUKWAT/dip-programming-prj-advanced-gui-evolve/wiki/Installation)
+in the [Wiki](https://github.com/GUKWAT/dip-programming-prj-advanced-gui-evolve/wiki).
 
 #### Basic Installation
 
@@ -70,15 +70,14 @@ pip install -r requirements.txt
 
 ## Contributing
 
-To contribute to this project, please follow the [Contribution Guide](https://github.com/NM-TAFE/project-advanced-ui-development-team-mental-capacity/wiki/Contribution-Guide)
-in the [Wiki](https://github.com/NM-TAFE/project-advanced-ui-development-team-mental-capacity/wiki).
+To contribute to this project, please follow the [Contribution Guide](https://github.com/GUKWAT/dip-programming-prj-advanced-gui-evolve/blob/main/CONTRIBUTING.md)
+in the [Wiki](https://github.com/GUKWAT/dip-programming-prj-advanced-gui-evolve/wiki).
 
 ## Code of Conduct
 
 ---
 
-- To view the code of conduct, please visit the [Code of Conduct] page in the [Wiki](https://github.com/NM-TAFE/project-advanced-ui-development-team-mental-capacity/wiki).
-
+- To view the code of conduct, please visit the [Code of Conduct] page in the [Wiki](https://github.com/NM-TAFE/dip-programming-prj-advanced-gui-architect/wiki)
 ## License
 
 This project is licensed under the [Creative Commons Zero v1.0 Universal](LICENSE) license.
