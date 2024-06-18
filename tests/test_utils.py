@@ -140,3 +140,32 @@ def test_file_already_exists_false(mocker):
 def test_file_already_exists_no_user_data(mocker):
     mocker.patch("app.utils.read_user_data", return_value=None)
     assert not utils.file_already_exists("4aj3sdl5a4k2sjd091u091j")
+
+
+def test_get_vid_save_path_config_not_set(mocker):
+    """
+    github test. To test locally expected_vid_download_path is the absolute path github test environment.
+    To run successfully on your system need to change to your systems absolute path"""
+    mocker.patch("app.utils.config", return_value="output_path")
+    expected_vid_download_path = "/home/runner/work/dip-programming-prj-advanced-gui-evolve/out/videos/"
+    assert utils.get_vid_save_path() == expected_vid_download_path
+
+
+def test_get_vid_save_path_get_from_config_and_add_slash(mocker):
+    """
+    github test. To test locally expected_vid_download_path is the absolute path github test environment.
+    To run successfully on your system need to change to your systems absolute path"""
+    mocker.patch("app.utils.config",
+                 return_value="/home/runner/work/dip-programming-prj-advanced-gui-evolve/out/videos")
+    expected_vid_download_path = "/home/runner/work/dip-programming-prj-advanced-gui-evolve/out/videos/"
+    assert utils.get_vid_save_path() == expected_vid_download_path
+
+
+def test_get_vid_save_path_from_config(mocker):
+    """
+    github test. To test locally expected_vid_download_path is the absolute path github test environment.
+    To run successfully on your system need to change to your systems absolute path"""
+    mocker.patch("app.utils.config",
+                 return_value="/home/runner/work/dip-programming-prj-advanced-gui-evolve/out/videos/")
+    expected_vid_download_path = "/home/runner/work/dip-programming-prj-advanced-gui-evolve/out/videos/"
+    assert utils.get_vid_save_path() == expected_vid_download_path

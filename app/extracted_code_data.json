@@ -1,0 +1,22 @@
+[
+    {
+        "timestamp": 201,
+        "text": ">>> user2 = User()\n\n>>> user2.first_name = \"Frank\"\n>>> user2.last_name = \"Poole\"\n>>>\n\n>>> print(first_name, last_name)\n\nArthur Clarke\n\n>>>\n\n>>> print(user1.first_name, user1.last_name)\nDave Bowman\n\n>>>\n\n>>> print(user2.first_name, user2.last_name)\nFrank Poole\n\nSDh\n\n>>>\n"
+    },
+    {
+        "timestamp": 206,
+        "text": ">>> user2 = User()\n\n>>> user2.first_name = \"Frank\"\n>>> user2.last_name = \"Poole\"\n>>>\n\n>>> print(first_name, last_name)\n\nArthur Clarke\n\n>>>\n\n>>> print(user1.first_name, user1.last_name)\nDave Bowman\n\n>>>\n\n>>> print(user2.first_name, user2.last_name)\nFrank Poole\n\n>>>\n\n>>>\n"
+    },
+    {
+        "timestamp": 211,
+        "text": ">>> user2 = User()\n\n>>> user2.first_name = \"Frank\"\n>>> user2.last_name = \"Poole\"\n>>>\n\n>>> print(first_name, last_name)\n\nArthur Clarke\n\n>>>\n\n>>> print(user1.first_name, user1.last_name)\nDave Bowman\n\n>>>\n\n>>> print(user2.first_name, user2.last_name)\nFrank Poole\n\n>>>\n\n>>> userl.age = 37\n"
+    },
+    {
+        "timestamp": 216,
+        "text": ">>> user2 = User()\n\n>>> user2.first_name = \"Frank\"\n>>> user2.last_name = \"Poole\"\n>>>\n\n>>> print(first_name, last_name)\n\nArthur Clarke\n\n>>>\n\n>>> print(user1.first_name, user1.last_name)\nDave Bowman\n\n>>>\n\n>>> print(user2.first_name, user2.last_name)\nFrank Poole\n\n>>>\n\n>>> userl.age = 37\n\n>>> user2.favorite_book = \"2@@1: A Space Odyss\n"
+    },
+    {
+        "timestamp": 221,
+        "text": ">>> user2 = User()\n\n>>> user2.first_name = \"Frank\"\n>>> user2.last_name = \"Poole\"\n>>>\n\n>>> print(first_name, last_name)\n\nArthur Clarke\n\n>>>\n\n>>> print(user1.first_name, user1.last_name)\nDave Bowman\n\n>>>\n\n>>> print(user2.first_name, user2.last_name)\nFrank Poole\n\n>>>\n\n>>> userl.age = 37\n\n>>> user2.favorite_book = \"2@@1: A Space Odyssey\u201d\n>>>\n\n>>>\n"
+    }
+]
