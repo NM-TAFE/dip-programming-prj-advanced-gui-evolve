@@ -218,6 +218,23 @@ def delete_video(delete_filename):
 
 @app.route("/update_settings", methods=['GET', 'POST'])
 def update_settings():
+    """Updates and saves changes from the user settings
+
+       GET requests:
+           Fetches the existing user settings and diplays
+           them in a template.
+
+       Post request:
+           Updates the settings if they are changes and
+           redirects the user back to the settings page with
+           the new changes.
+
+       returns:
+           Response:
+             -GET requests: display the settings page with the existing settings
+             -POST requests: displays the settings page with updated settings
+
+    """
     if request.method == "POST":
         new_values = utils.extract_form_values(request)
         utils.update_configuration(new_values)
@@ -228,6 +245,20 @@ def update_settings():
 
 @app.route('/reset-settings', methods=['POST'])
 def reset_settings():
+
+    """
+    Resets the settings back to the factory default settings
+
+     POST request: Resets settings by deleting the
+                   existing config file and replaces
+                   it with the default config.example.ini
+                   by copying it.
+
+
+     returns: rendered settings.html template with the
+              current settings.
+
+    """
     print("Current working directory:", os.getcwd())
     # Delete the existing config.ini file
     if os.path.exists('config.ini'):
@@ -239,6 +270,21 @@ def reset_settings():
 
 @app.route('/update_tesseract_path', methods=['GET', 'POST'])
 def update_tesseract_path():
+
+    """
+    Updates the Tesseract file path
+
+    GET: Displays the current settings including the tesseract path
+
+    POST: Searches for the tesseract file path automatically  in your
+          local machine instead of setting it manually in your settings
+          and updates the file path if the tesseract is found
+
+
+      returns: rendered settings.html template with the
+              current settings.
+
+      """
     global cancel_search_flag
 
     if request.method == 'POST' and request.form.get('cancel_search'):
