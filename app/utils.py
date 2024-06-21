@@ -122,7 +122,7 @@ def get_vid_save_path() -> str:
     if not vid_download_path.is_dir():
         return f"{vid_download_path}" + SLASH
 
-    return vid_download_path
+    return str(vid_download_path) + SLASH
 
 
 def get_output_path() -> str:
